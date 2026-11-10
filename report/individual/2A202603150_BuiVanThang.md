@@ -6,7 +6,7 @@
 
 - Họ tên: Bùi Văn Thắng
 - MSSV: 2A202603150
-- Email:
+- Email: thangbv04@gmail.com
 - Lớp: K5-L2A
 - Link repo bài làm: https://github.com/BuiVanThang04/K5-L2A-DAY02-BuiVanThang-2A202603150-ObjectDetection
 - Link Colab đã chạy: https://colab.research.google.com/drive/1DEmcnybhf-VJmSuAND3Rq75rc7r3s09t
@@ -14,6 +14,8 @@
 ## 2. Schema và mini guideline
 
 Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ hồ đã quyết định, cách áp dụng schema và phần cần giảng viên làm rõ.
+
+Ba ca sau rà: drive_012 gán bus vì có hình dáng minibus; drive_037 gán car quanh phần nhìn thấy phía trên hàng cây; drive_008 không thêm box cho mảnh mái/kính chưa đủ xác định lớp. Các quyết định được đối chiếu với quy tắc về xe bị che trong guideline.
 
 ## 3. Annotation và self-QC
 
@@ -115,7 +117,7 @@ Trả lời bốn câu hỏi cuối notebook:
 | Đầy đủ vật thể | Đã có rework, nhưng FN=261 cho thấy còn các trường hợp không khớp; không kết luận chỉ do thiếu box. |
 | Độ bám sát và hình học box | Mean IoU của các box khớp là 0.8471; chỉ số này không đại diện cho mọi box. |
 | Phân lớp nhất quán | Vẫn có nhầm car/van và lỗi ở các lớp ít mẫu, cần tiếp tục rà. |
-| Mini guideline và ca mơ hồ | Có định nghĩa, quy tắc và ba ca; các quyết định cuối trong guideline vẫn đang để chưa chốt. |
+| Mini guideline và ca mơ hồ | Có định nghĩa, quy tắc và ba ca đã ghi quyết định: drive_012 là bus; drive_037 là car theo phần nhìn thấy; drive_008 không thêm box cho mảnh xe chưa đủ nhận diện. |
 | Gold-set annotation QC | Có JSON trước/sau và giải thích rework; giữ nguyên số liệu và kết luận của evaluator. |
 | Pipeline YOLO và phân tích | Đã train 50 epochs trên Colab, giữ split 50 train/10 eval, có metrics, 10 ảnh prediction và nhận xét lỗi ở mục 5. |
 
