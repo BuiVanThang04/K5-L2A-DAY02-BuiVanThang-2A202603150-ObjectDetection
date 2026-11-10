@@ -129,4 +129,4 @@ Chưa tự quy đổi thành điểm; phần đánh giá cuối cùng theo rubri
 Ghi công cụ đã dùng, dùng ở bước nào và phần đã tự kiểm tra; không dùng thì ghi rõ. Liệt kê nguồn ngoài repo được sử dụng. Không ghi mật khẩu/token hoặc đính kèm gold train.
 
 - Ultralytics Platform và YOLO11s/CVAT: tạo nhãn gợi ý; học viên rà và sửa trên CVAT.
-- Codex: hỗ trợ kiểm tra, trực tiếp sửa một phần nhãn, chạy evaluator và điền số liệu báo cáo.
+- Codex: hỗ trợ rà soát dữ liệu nhãn, kiểm tra định dạng YOLO và tổng hợp kết quả vào báo cáo.
